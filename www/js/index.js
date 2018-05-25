@@ -33,12 +33,12 @@ function saveImage(){
   var params = {data: base64String, prefix: 'fearFilter_', format: 'JPG', quality: 80, mediaScanner: true};
   window.imageSaver.saveBase64Image(params,
         function (filePath) {
-          console.log('File saved on ' + filePath);
+          alert('File saved at ' + filePath);
           //result.innerHTML = '- Photo saved';
         },
         function (msg) {
           console.error(msg);
-          result.innerHTML = msg;
+          alert(msg);
         }
     );
 }
