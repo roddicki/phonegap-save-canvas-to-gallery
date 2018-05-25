@@ -2,7 +2,7 @@
 <widget id="com.roddickinson.saveimg" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Save Canvas</name>
     <description>
-        Sample application that saves a canvas as ajpg in device the photo gallery.
+        Sample application that saves a canvas as a jpg to the device  photo gallery.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
