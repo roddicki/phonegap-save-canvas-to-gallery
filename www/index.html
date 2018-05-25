@@ -19,17 +19,36 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <style>
+    #myCanvas{
+        width: 90%;
+        height: auto;
+        border: 1px solid black;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 90%;
+        height: 50px;
+        background-color: white;
+        border-radius: 6px;
+        text-align: center;
+        text-decoration: none;
+    }
+    </style>
+    <title>Save Canvas img 1.4</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>PhoneGap Template</h1>
+        <h1>Save Canvas to Gallery v1.0</h1>
         <div>
-            <p>hello world</p>
-            <p>edit this HTML page, the CSS file and the JS file</p>
-            <p id="change">This text will change when you run this app on android or ios</p>
+            <p id="ready"></p>
+            <h3 id="result">save canvas result...</h3>
+            <p>This app uses cordova-save-image-gallery plugin<br>https://github.com/agomezmoron/cordova-save-image-gallery</p>
+            <canvas id="myCanvas"></canvas>
         </div>
+        <div><a id="save" class="btn" href="">save</a></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
