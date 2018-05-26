@@ -26,7 +26,7 @@ document.addEventListener('deviceready', function() {
 //===
 //SAVE IMAGE FROM CANVAS
 //save using cordova-save-image-gallery plugin
-function saveImage(){
+function saveCanvas(){
   var canvas = document.getElementById('myCanvas');
   var dataURL = canvas.toDataURL("image/jpg");
   var base64String = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
