@@ -3,16 +3,19 @@ document.addEventListener('deviceready', function() {
     console.log('\n-------------\nDEVICE READY');
     document.getElementById('ready').innerHTML = "DEVICE READY";
 
-
+    //create invisible canvas
     var canvasElem = document.createElement('canvas');
     canvasElem.id = 'myCanvas';
+    canvasElem.setAttribute('style','display:none');
     document.querySelector('.app').appendChild(canvasElem);
 
+    //fetch remote image
     var myImage = new Image();
     myImage.src = "http://www.roddickinson.net/pages/img/airloom/2.6.jpg";
 
-
+    //wait for image to load
     myImage.onload = function() {
+        //draw on canvas
         var canvas = document.getElementById('myCanvas');
         var ctx = canvas.getContext("2d");
         console.log("image height=" +myImage.height+ " canvas height=" +canvas.height);
