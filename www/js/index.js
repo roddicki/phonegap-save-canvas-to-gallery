@@ -3,7 +3,7 @@ document.addEventListener('deviceready', function() {
     console.log('\n-------------\nDEVICE READY');
     document.getElementById('ready').innerHTML = "DEVICE READY";
 
-    var c = document.getElementById("myCanvas");
+    /*var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
 
     ctx.beginPath();
@@ -14,7 +14,20 @@ document.addEventListener('deviceready', function() {
     ctx.beginPath();
     ctx.rect(40, 40, 150, 100);
     ctx.fillStyle = "green";
-    ctx.fill();
+    ctx.fill();*/
+
+    var myImage = new Image();
+    myImage.src = "http://www.roddickinson.net/pages/img/airloom/2.6.jpg";
+
+
+    myImage.onload = function() {
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext("2d");
+        console.log("image height=" +myImage.height+ " canvas height=" +canvas.height);
+        canvas.width = myImage.width;
+        canvas.height = myImage.height;
+        ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+    }
 
     document.getElementById('save').addEventListener('click', saveCanvas);
     
