@@ -6,6 +6,7 @@ document.addEventListener('deviceready', function() {
 
     var canvasElem = document.createElement('canvas');
     canvasElem.id = 'myCanvas';
+    document.querySelector('.app').appendChild(canvasElem);
 
     var myImage = new Image();
     myImage.src = "http://www.roddickinson.net/pages/img/airloom/2.6.jpg";
