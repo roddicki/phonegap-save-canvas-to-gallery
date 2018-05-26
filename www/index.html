@@ -21,38 +21,38 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <style>
     #myCanvas{
-        width: 90%;
+        width: 100%;
         height: auto;
         border: 1px solid black;
     }
 
     .btn {
         display: inline-block;
-        width: 90%;
+        width: 100%;
         height: 50px;
+        line-height: 50px;
         background-color: white;
         border-radius: 6px;
         text-align: center;
         text-decoration: none;
     }
     </style>
-    <title>Save Canvas img 1.4</title>
+    <title>Save Canvas to iOS / Android Photo Gallery v1.0</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>Save Canvas to Gallery v1.0</h1>
+        <h1>Save Canvas to iOS / Android Photo Gallery v1.0</h1>
         <div>
             <p id="ready"></p>
-            <h3 id="result">save canvas result...</h3>
             <p>This app uses cordova-save-image-gallery plugin</p>
             <p>https://github.com/agomezmoron/cordova-save-image-gallery</p>
-            <p>it creates an invisible canvas element (display:none)</p>
-            <p>loads a remote image into the canvas</p>
-            <p>Then the button below downloads that image into the device photo gallery</p>
+            <p>It creates an invisible canvas element (display:none)</p>
+            <p>Then loads a remote image into the canvas</p>
+            <p>Then the button below downloads that canvas image into the device photo gallery as a jpg</p>
             <!-- <canvas id="myCanvas"></canvas> -->
         </div>
-        <div><a id="save" class="btn" href="">save</a></div>
+        <div><a id="save" class="btn" href="">save invisible image</a></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

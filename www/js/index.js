@@ -6,6 +6,7 @@ document.addEventListener('deviceready', function() {
     //create invisible canvas
     var canvasElem = document.createElement('canvas');
     canvasElem.id = 'myCanvas';
+    //comment out the line below to make the canvas and image visible
     canvasElem.setAttribute('style','display:none');
     document.querySelector('.app').appendChild(canvasElem);
 
@@ -42,7 +43,6 @@ function saveCanvas(){
   window.imageSaver.saveBase64Image(params,
         function (filePath) {
           alert('File saved at ' + filePath);
-          //result.innerHTML = '- Photo saved';
         },
         function (msg) {
           console.error(msg);
